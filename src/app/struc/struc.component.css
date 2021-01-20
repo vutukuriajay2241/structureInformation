@@ -1,6 +1,7 @@
 .card{
     width: 40%;
     padding: 20px;
+    cursor: pointer;
 }
 .container{
     display: flex;

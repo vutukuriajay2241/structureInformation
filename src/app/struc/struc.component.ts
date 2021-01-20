@@ -46,7 +46,7 @@ export class StrucComponent implements OnInit {
     
   }
   getDetails(id){
-    if (id.has('_')){
+    if (id.includes('_')){
     this.strucService.getDetails(id).subscribe((data:any)=>{
       this.details.iri =data._embedded.terms[0].iri;
       this.details.Name= data._embedded.terms[0].label;

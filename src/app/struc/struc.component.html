@@ -1,1 +1,12 @@
-<p>struc works!</p>
+<h1> Anamatical Structures Data</h1>
+
+<div class="container">
+    <div class="card" *ngFor="let anatomical_structure of anatomical_structures"> 
+        <div class="structureName">
+            {{anatomical_structure.name}}
+        </div>
+        <div class="structureId">
+            {{anatomical_structure.id? anatomical_structure.id:'not found in UBERON'}}
+        </div>
+    </div>
+</div>

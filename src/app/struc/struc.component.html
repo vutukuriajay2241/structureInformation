@@ -1,7 +1,7 @@
 <h1> Anamatical Structures Data</h1>
 
 <div class="container">
-    <div class="card" *ngFor="let anatomical_structure of anatomical_structures"> 
+    <div class="card" *ngFor="let anatomical_structure of anatomical_structures" onclick="getDetails(anatomical_structure.id)"> 
         <div class="structureName">
             {{anatomical_structure.name}}
         </div>

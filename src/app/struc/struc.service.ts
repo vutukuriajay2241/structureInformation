@@ -10,4 +10,8 @@ export class StrucService {
   public getData(){
     return this.httpClient.get(`https://astb-miner-v2.herokuapp.com/v2/18lJe-9fq5fHWr-9HuFTzhWnmfygeuXs2bbsXO8vh1FU/0`);
   }
+  public getDetails(id){
+    return this.httpClient.get(`https://www.ebi.ac.uk/ols/api/ontologies/uberon/terms?iri=http://purl.obolibrary.org/obo/${id}`);
+
+  }
 }

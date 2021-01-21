@@ -1,0 +1,28 @@
+<div *ngIf="!data.notFound">
+    <div class="header">
+
+        <div>
+            {{data.Name}}
+        </div>
+        <div class="close" (click)="close()"  >X</div>
+    </div>
+    <div>
+        <h4 style="margin: 5px 0px;"> Description</h4>
+        {{data.description}}<br>
+    </div>
+    <a target="_blank" href="{{data.iri}}">
+        {{data.iri}}<br>
+    </a>
+    <div>
+        {{data.obo_id}}
+    </div>
+</div>
+<div *ngIf="data.notFound">
+    <div class="header">
+
+        <div>
+            Data Not Found
+        </div>
+        <div class="close" (click)="close()" >X</div>
+    </div>
+</div>
